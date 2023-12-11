@@ -4,7 +4,7 @@ $ip = $_SERVER['REMOTE_ADDR'];
 
 // Use a service to get location based on IP (e.g., ipstack.com)
 $apiKey = 'YOUR_IPSTACK_API_KEY';
-$location = file_get_contents("http://api.ipstack.com/{$ip}?access_key={e206d6ea542db2f410ec54b2d8bca383}");
+$location = file_get_contents("http://api.ipstack.com/{$ip}?access_key=e206d6ea542db2f410ec54b2d8bca383");
 $location = json_decode($location);
 
 // Get user-agent details
